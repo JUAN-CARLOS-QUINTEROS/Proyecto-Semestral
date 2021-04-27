@@ -1,0 +1,49 @@
+
+#banner img{  
+    width: 100%;
+    height: 1080xp;
+}
+
+
+#banner .contenedor  {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    color: white;
+    font-family:cursive;
+}
+
+#banner h2{
+    font-size: 29px;
+}
+
+#banner a{
+    margin-top: 15px;
+    display: block;
+    width: 100px;
+    padding: 10px;
+    border:solid 1px green;
+    text-decoration: none;
+    color: greenyellow;
+    border: radius 8px;
+}
+
+#banner a:hover{
+    background: green;
+    
+}
+
+@media screen and (max-width: 1080px) {
+    #banner .contenedor{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
