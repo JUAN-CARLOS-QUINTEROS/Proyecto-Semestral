@@ -7,6 +7,10 @@
     
     
 }
+.recupera{
+   
+}
+    
 
 #blog {
     background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #bfe762 46%, #28b823 59%, #13805f 71%, #163d2d 84%,
@@ -48,7 +52,15 @@
     text-align: center;
     font-family: cursive;
 }
-   
+
+#blog h5{
+    padding: 10px 0;
+    font-size: 13px;
+    flex: auto;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+}
 #blog a{
     text-decoration: none;
     color: black;

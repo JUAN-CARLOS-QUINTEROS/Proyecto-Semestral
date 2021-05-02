@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="dist/css/lightbox.css">
-    
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+
 </head>
 
 <body>
@@ -23,102 +25,161 @@
                 <a href="index.html">Inicio</a>
                 <a href="galeria.html">Galeria</a>
                 <a href="Formulario.html">Formulario</a>
-                
+
             </nav>
         </div>
     </header>
     <main class="galeria">
-           
-            <section id="blog">
-            <h3>Galeria</h3>
+
+
+
+        <section id="blog">
+            <h3>Galeria de figuras de accion de dinosaurios para la venta</h3>
+         
+            <input type="button" value="Recupera Euro" id="btnEuro">
+            <script>
+                $(document).ready(function () {
+                    $("#bntEuro").click(function () {
+
+                    });
+
+                });
+            </script>
+
+
+            <input type="button" value="Recuperar Dolar" onclick="recupera()">
+            <div id="valor_dolar"></div>
+            <script>
+                function recupera() {
+                    fetch("https://mindicador.cl/api/dolar")
+                        .then(
+                            function (response) {
+                                if (response.status != 200) {
+                                    alert("problemas de conexion con el servidor");
+                                    return;
+                                }
+                                console.log('Estado de la respuesta:' + response.status);
+
+                                response.json().then(
+                                    function (data) {
+                                        console.log(data);
+                                        var dolar = data.serie[0].valor;
+                                        document.getElementById('valor_dolar').innerHTML = dolar;
+
+                                    }
+                                );
+
+                            }
+
+
+                        );
+
+
+                }
+            </script>
+
+
+
             <div class="contenedor">
-                
+
                 <article>
                     <a href="img/dino1.jpg" data-lightbox="dinos">
-                        <img src="img/dino1.jpg" alt="">                        
+                        <img src="img/dino1.jpg" alt="">
                     </a>
                     <h4>Ankylosaurus</h4>
+                    <h5>Dolar: $5,99</h5>
                 </article>
 
                 <article>
-                    <a href="img/dino2.jpg" data-lightbox="dinos">                        
-                        <img src="img/dino2.jpg" alt="">                        
+                    <a href="img/dino2.jpg" data-lightbox="dinos">
+                        <img src="img/dino2.jpg" alt="">
                     </a>
                     <h4>Tyrannosaurus</h4>
+                    <h5>Dolar: $7,99</h5>
                 </article>
 
                 <article>
-                    <a href="img/dino3.jpg" data-lightbox="dinos">                         
-                        <img src="img/dino3.jpg" alt="">                        
+                    <a href="img/dino3.jpg" data-lightbox="dinos">
+                        <img src="img/dino3.jpg" alt="">
                     </a>
                     <h4>Velociraptor</h4>
+                    <h5>Dolar: $9,99</h5>
                 </article>
 
                 <article>
-                    <a href="img/dino4.jpg" data-lightbox="dinos">                        
-                        <img src="img/dino4.jpg" alt="">                        
+                    <a href="img/dino4.jpg" data-lightbox="dinos">
+                        <img src="img/dino4.jpg" alt="">
                     </a>
                     <h4>Parasaurolophus</h4>
+                    <h5>Dolar: $10,99</h5>
                 </article>
-              
+
 
                 <article>
-                    <a href="img/dino10.jpg" data-lightbox="dinos">                        
-                        <img src="img/dino10.jpg" alt="">                        
+                    <a href="img/dino5.jpg" data-lightbox="dinos">
+                        <img src="img/dino5.jpg" alt="">
                     </a>
                     <h4>Allosaurus</h4>
+                    <h5>Dolar: $12,99</h5>
                 </article>
 
                 <article>
-                    <a href="img/dino16.jpg" data-lightbox="dinos">                         
-                        <img src="img/dino16.jpg" alt="">                        
+                    <a href="img/dino6.jpg" data-lightbox="dinos">
+                        <img src="img/dino6.jpg" alt="">
                     </a>
                     <h4>Carnotaurus</h4>
+                    <h5>Dolar: $13,99</h5>
                 </article>
 
                 <article>
-                    <a href="img/dino15.jpg" data-lightbox="dinos">                         
-                        <img src="img/dino15.jpg" alt="">                        
+                    <a href="img/dino7.jpg" data-lightbox="dinos">
+                        <img src="img/dino7.jpg" alt="">
                     </a>
                     <h4>Baryonyxr</h4>
+                    <h5>Dolar: $15,99</h5>
                 </article>
-               
+
                 <article>
-                    <a href="img/dino18.jpg" data-lightbox="dinos">                         
-                        <img src="img/dino18.jpg" alt="">                        
+                    <a href="img/dino8.jpg" data-lightbox="dinos">
+                        <img src="img/dino8.jpg" alt="">
                     </a>
                     <h4>Spinosaurus</h4>
+                    <h5>Dolar: $17,99</h5>
                 </article>
                 <article>
-                    <a href="img/dino7.jpg" data-lightbox="dinos">                         
-                        <img src="img/dino7.jpg" alt="">                        
+                    <a href="img/dino9.jpg" data-lightbox="dinos">
+                        <img src="img/dino9.jpg" alt="">
                     </a>
                     <h4>Pachycephalosaurus</h4>
+                    <h5>Dolar: $18,99</h5>
                 </article>
                 <article>
-                    <a href="img/dino14.jpg" data-lightbox="dinos">                         
-                        <img src="img/dino14.jpg" alt="">                        
+                    <a href="img/dino10.jpg" data-lightbox="dinos">
+                        <img src="img/dino10.jpg" alt="">
                     </a>
                     <h4>Pteranodon</h4>
+                    <h5>Dolar: $20,99</h5>
                 </article>
                 <article>
-                    <a href="img/dino12.jpg" data-lightbox="dinos">                         
-                        <img src="img/dino12.jpg" alt="">                        
+                    <a href="img/dino11.jpg" data-lightbox="dinos">
+                        <img src="img/dino11.jpg" alt="">
                     </a>
                     <h4>Triceratopss</h4>
+                    <h5>Dolar: $21,99</h5>
                 </article>
                 <article>
-                    <a href="img/dino8.jpg" data-lightbox="dinos">                         
-                        <img src="img/dino8.jpg" alt="">                        
+                    <a href="img/dino812.jpg" data-lightbox="dinos">
+                        <img src="img/dino12.jpg" alt="">
                     </a>
                     <h4>Oviraptor</h4>
+                    <h5>Dolar: $23,99</h5>
                 </article>
-               
-              
+
+
             </div>
         </section>
 
-     
+
     </main>
 
     <footer>
