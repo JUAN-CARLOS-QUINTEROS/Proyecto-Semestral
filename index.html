@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,20 +8,23 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/fontello.css">
 </head>
-
 <body>
     <header>
-
         <div class="contenedor">
             <h1 class="icon-paw">EducaDino</h1>
             <input type="checkbox" name="" id="MenuDino">
             <label class="icon-align-left" for="MenuDino"></label>
+            <label class="icon-search" id="buscador" onclick="slide()"></label>
             <nav class="menu">
                 <a href="index.html">Inicio</a>
                 <a href="galeria.html">Galeria</a>
-                <a href="Formulario.html">Formulario</a>
-                
+                <a href="Formulario.html">Formulario</a>  
             </nav>
+        </div>
+        <div id="search" class="hide">
+            <div class="contenedor2">
+                <input type="text" placeholder="Ej: Test"><button>Buscar</button>
+            </div>
         </div>
     </header>
     <main>
@@ -40,68 +42,55 @@
         </section>
         <section id="blog">
             <h3>Elige tu tipo De Dinosaurio</h3>
-            <div class="contenedor">
-                
+            <div class="contenedor">               
                 <article>
                     <a href="Herbivoros.html"><h4>Herbivoros</h4>
                         <img src="img/dino12.jpg" alt="">
                     </a>
                 </article>
-
                 <article>
                     <a href="Carnivoros.html"><h4>Carnivoros</h4>
                         <img src="img/dino3.jpg" alt="">
                     </a>
                 </article>
-
                 <article>
                     <a href="Omnìvoros.html"><h4>Omnívoros</h4>
                         <img src="img/dino6.jpg" alt="">
                     </a>
                 </article>
-
                 <article>
                     <a href="Voladores.html"><h4>Voladores</h4>
                         <img src="img/dino14.jpg" alt="">
                     </a>
-                </article>
-              
+                </article>             
             </div>
         </section>
-
         <section id="info">
             <h3>Destacados</h3>
-            <div class="contenedor">              
-                
+            <div class="contenedor">                             
                 <article>
                     <a href="galeria.html"><h4>Carnotaurus </h4>
                         <img src="img/dino16.jpg" alt="">
                     </a>
                 </article>
-
                 <article>
                     <a href="galeria.html"><h4>Pachycephalosaurus</h4>
                         <img src="img/dino7.jpg" alt="">
                     </a>
                 </article>
-
                 <article>
                     <a href="galeria.html"><h4>Baryonyxr</h4>
                         <img src="img/dino15.jpg" alt="">
                     </a>
                 </article>
-            </div>       
-  
+            </div>         
         </section>
+        <script src="js/scripts.js"></script>
     </main>
-
     <footer>
         <div class="contenedor">
             <p>EducaDino - Desarrollo web</p>
         </div>
-    </footer>
-
+    </footer>    
 </body>
-
 </html>
-
