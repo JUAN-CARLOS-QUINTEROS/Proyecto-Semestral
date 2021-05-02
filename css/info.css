@@ -1,0 +1,53 @@
+
+#info {
+    background: rgb(11, 17, 14)
+    
+}
+
+#info .contenedor{ 
+       
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    z-index: 50;
+}  
+
+
+
+#info .contenedor img{
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    border: solid 5px green ;
+    border-radius: 15px;
+    position: inherit;
+    border-radius: 50%;
+    object-fit: scale-down ;
+    
+    
+}
+
+
+#info h4{
+    padding: 10px 0;
+    font-size: 21px;
+    flex: auto;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+    color: green;
+}
+   
+#info a{
+    text-decoration: none;
+    color: black;
+}
+
+#info h3{
+    font-family: cursive;
+    color: white;
+    display: flex;
+   justify-content: center;
+
+}

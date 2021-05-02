@@ -1,0 +1,55 @@
+#blog h3{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 30px;
+    color:white;
+
+    
+    
+}
+
+#blog {
+    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #bfe762 46%, #28b823 59%, #13805f 71%, #163d2d 84%,
+    #1c1a27 100%);
+    width: auto;
+    
+}
+
+#blog .contenedor{ 
+       
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  
+ }  
+
+
+
+#blog .contenedor img{
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    border: solid 5px green ;
+    border-radius: 15px;
+    position: inherit;
+    object-fit:initial ;
+
+    
+    
+}
+
+
+#blog h4{
+    padding: 10px 0;
+    font-size: 21px;
+    flex: auto;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+}
+   
+#blog a{
+    text-decoration: none;
+    color: black;
+}
