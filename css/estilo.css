@@ -13,15 +13,19 @@
 *{
     margin: 0;
     padding: 0;
+    
+    
 }
 
 header{
     width: 100%;
     height: 50px;
-    background-color:#22362e;
+    background-image: url(../img/ban.jpg);
     color:white;
     position: fixed;
     z-index: 100;
+    border: solid green;
+    
 }
 
 
@@ -39,5 +43,4 @@ footer .contenedor{
     padding: 40px;
     font-family: fantasy;
     width: auto;   
-
 }

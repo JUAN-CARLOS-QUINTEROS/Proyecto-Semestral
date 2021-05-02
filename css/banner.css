@@ -1,20 +1,25 @@
 
 #banner img{  
     width: 100%;
-    height: 1080xp;
+    
 }
 
 
 #banner .contenedor  {
+    width: auto;
     position: absolute;
     top: 150px;
     left: 50px;
     color: white;
     font-family:cursive;
+    
 }
 
 #banner h2{
     font-size: 29px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
 }
 
 #banner a{
