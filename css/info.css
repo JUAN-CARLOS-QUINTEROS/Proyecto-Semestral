@@ -10,7 +10,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 30px;
-  
+    z-index: 50;
  }  
 
 
