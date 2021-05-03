@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="dist/css/lightbox.css">
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/"></script>
 
 
 </head>
@@ -35,17 +35,20 @@
 
         <section id="blog">
             <h3>Galeria de figuras de accion de dinosaurios para la venta</h3>
-         
+        <div class="contenedorde">
             <input type="button" value="Recupera Euro" id="btnEuro">
             <script>
-                $(document).ready(function () {
-                    $("#bntEuro").click(function () {
-
+                $(document).ready(function() {
+                    $("#bntEuro").click(function() {
+                        $.get("https://mindicador.cl/api/euro",function(data) {
+                            var euro= data.serie[0].valor;
+                            $("#valor_euro").html(euro);
+                        }) ;
                     });
 
                 });
             </script>
-
+            <div id="valor_euro"></div>
 
             <input type="button" value="Recuperar Dolar" onclick="recupera()">
             <div id="valor_dolar"></div>
@@ -78,7 +81,7 @@
                 }
             </script>
 
-
+        </div>
 
             <div class="contenedor">
 
