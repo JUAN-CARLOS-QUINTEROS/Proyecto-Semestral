@@ -1,19 +1,27 @@
 
 #banner video{  
+    display: flex;
+    align-items: center;
     position: relative;
+    max-width: 1550px;
     width: 100%;
     height: 80vh;
     object-fit: cover;
+    margin-right: 0;
 }
 
 
 #banner .contenedor  {
+    width: 100%;
     position: absolute;
     top: 150px;
-    left: 50px;
     color: white;
     font-family:cursive;
     z-index: 50;
+}
+
+#banner .contenedor h2,p,a{
+    margin-left: 60px;
 }
 
 #banner h2{

@@ -1,5 +1,6 @@
 .galeria {
-    padding-top: 20px;     
+    padding-top: 20px;  
+    z-index: 60;   
 }
 
 
