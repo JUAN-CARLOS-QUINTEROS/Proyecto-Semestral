@@ -101,3 +101,5 @@ function slide(){
          searchbar.classList.add("hide");
     }
 }
+
+
