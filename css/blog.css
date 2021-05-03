@@ -1,66 +1,74 @@
-#blog h3{
+
+*{
+    padding: 0;
+    margin: 0;
+    border: solid 0px;
+}
+
+#blog{
     text-align: center;
-    font-family: cursive;
-    margin-top: 30px;
-    color:white;
-
-    
-    
-}
-
- 
-    
-
-#blog {
-    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #bfe762 46%, #28b823 59%, #13805f 71%, #163d2d 84%,
-    #1c1a27 100%);
-    width: auto;
-    
-}
-
-#blog .contenedor{ 
-       
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-  
- }  
-
-
-
-#blog .contenedor img{
-    margin: 15px;
-    width: 250px;
-    height: 250px;
-    border: solid 5px green ;
-    border-radius: 15px;
-    position: inherit;
-    object-fit:initial ;
-
-    
-    
-}
-
-
-#blog h4{
-    padding: 10px 0;
-    font-size: 21px;
-    flex: auto;
-    justify-content: center;
-    text-align: center;
-    font-family: cursive;
-}
-
-#blog h5{
-    padding: 10px 0;
-    font-size: 13px;
-    flex: auto;
-    justify-content: center;
-    text-align: center;
-    font-family: cursive;
-}
-#blog a{
+    margin-top: 20px;
     text-decoration: none;
     color: black;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: solid 0px;
+}
+
+#blog .contenedor{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    border: solid 0px;
+    z-index: 60;
+}
+
+
+.blog  h3{
+    text-align: center;
+}
+.contenedor .cartas{
+    max-width: 330px;
+    max-height: 430px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.contenedor .cartas:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .cartas img{
+    width: 330px;
+    height: 220px;
+
+}
+
+
+.contenedor .cartas h4{
+    font-weight: 600;
+}
+
+#blog .contenedor .cartas p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contenedor .cartas a,p{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    font-weight: 500;
+    text-decoration: none;
+    color: black
 }

@@ -1,21 +1,50 @@
-.galeria {
-    padding-top: 20px;  
-    z-index: 60;   
+  
+.galeria{
+    width: 100%;
+    padding-top: 20px;
+}
+.galeria h3{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 30px;
+    color:white;
+
+    
+    
 }
 
-
-
+ 
+    
 
 #blog {
     background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #bfe762 46%, #28b823 59%, #13805f 71%, #163d2d 84%,
     #1c1a27 100%);
+    width: auto;
     
 }
-#galeria .contenedor{
-    
+
+.galeria .contenedor{ 
+       
     display: flex;
-    
-    
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  
+}  
+
+
+
+.galeria .contenedor img{
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    border: solid 5px green ;
+    border-radius: 15px;
+    position: inherit;
+    object-fit:initial ;
+
     
     
 }
+
+
