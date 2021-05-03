@@ -16,6 +16,7 @@ function ValidarFormulario() {
     if (resp == false) {
         return false;
     }
+    /*
     var resp = validarUsuario();
     if (resp == false) {
         return false;
@@ -27,7 +28,8 @@ function ValidarFormulario() {
     var resp = validarTelefono();
     if (resp == false) {
         return false;
-    }
+    }*/
+
     return true;
 }
 
@@ -49,3 +51,12 @@ function validarApellido(){
     }    
     console.log ('apellido:'+ apellido);
 }
+
+function validarEmail() {
+    var Email = document.getElementById('txtEmail').value;
+    if (Email.trim().length == 0 ){
+        alert('ingrese Email');
+        return false;        
+    }   
+    console.log ('Email:'+ Email);
+}    
