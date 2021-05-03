@@ -10,8 +10,10 @@
     #1c1a27 100%);
     
 }
-.contenedorde {
+.contenedor{
     display: flex;
-    justify-content: center;
-    text-align: center;
+    
+    
+    
+    
 }
