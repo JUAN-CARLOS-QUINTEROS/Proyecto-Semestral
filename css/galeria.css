@@ -10,7 +10,8 @@
     #1c1a27 100%);
     
 }
-.contenedor{
+#galeria .contenedor{
+    
     display: flex;
     
     
