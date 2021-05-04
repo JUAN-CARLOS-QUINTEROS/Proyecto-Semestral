@@ -1,6 +1,3 @@
-function mensaje(){
-    alert('Datos Guardados Correctamente');
-}
 
 
 function ValidarFormulario() {
@@ -30,8 +27,11 @@ function ValidarFormulario() {
     if (resp == false) {
         return false;
     }
-
+    alert('pinchar en registrar')
     return true;
+    
+    }
+    
 }
 
 function validarNombre(){
@@ -88,6 +88,14 @@ function validarTelefono(){
     }    
     console.log ('telefono:'+ telefono);
 }
+
+
+
+
+
+
+
+
 
 
 
