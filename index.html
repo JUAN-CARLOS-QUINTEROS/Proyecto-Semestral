@@ -8,7 +8,6 @@
     <title>EducaDino</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/fontello.css">
-   
 </head>
 
 <body>
@@ -80,36 +79,17 @@
                 </div>
 
             </div>
+            <div class="slider">
+                <div><img src="/img/dino13.jpg" alt=""></div>
+                <div><img src="/img/dino14.jpg" alt=""></div>
+                <div><img src="/img/dino18.jpg" alt=""></div>
+            </div>
             
-            
-        </section>
-
-        <section id="info">
-            <h3>Destacados</h3>
-            <div class="contenedor">              
-                
-                <article>
-                    <a href="galeria.html"><h4>Carnotaurus </h4>
-                        <img src="img/dino16.jpg" alt="">
-                    </a>
-                </article>
-
-                <article>
-                    <a href="galeria.html"><h4>Pachycephalosaurus</h4>
-                        <img src="img/dino7.jpg" alt="">
-                    </a>
-                </article>
-
-                <article>
-                    <a href="galeria.html"><h4>Baryonyxr</h4>
-                        <img src="img/dino15.jpg" alt="">
-                    </a>
-                </article>
-            </div>       
-  
         </section>
         
-        <script src="js/script.js"></script>
+        
+         
+        
     </main>
 
     <footer>
@@ -118,6 +98,22 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                mode:"fade",
+                auto:true,
+                controls:false,
+                pasue:2000,
+                adaptiveHeight: true
+            });
+            
+        });
+    </script>
 </body>
 
 </html>

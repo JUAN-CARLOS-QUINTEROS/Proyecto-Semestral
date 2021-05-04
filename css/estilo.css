@@ -24,14 +24,16 @@ header{
     color:white;
     position: fixed;
     z-index: 100;
+    align-items: center;
 }
 section {
-    height: 100%;
+    
     width: 100%;
     display: block;
     position: relative;
     border: solid 0px;
-    margin-bottom: 20px;
+    
+    
 }
 
 body{
@@ -57,7 +59,7 @@ footer .contenedor{
     text-align: center;
     padding: 40px;
     font-family: fantasy;
-    width: auto;   
-   
+    width: 100%;   
+    z-index: 60;
 }
 
