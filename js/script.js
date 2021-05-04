@@ -27,6 +27,7 @@ function ValidarFormulario() {
     if (resp == false) {
         return false;
     }
+    else 
     alert('pinchar en registrar')
     return true;
     
