@@ -1,6 +1,3 @@
-function mensaje(){
-    alert('Datos Guardados Correctamente');
-}
 
 
 function ValidarFormulario() {
@@ -29,10 +26,15 @@ function ValidarFormulario() {
     var resp = validarTelefono();
     if (resp == false) {
         return false;
-    }
-
+    } 
+    
+    else
+        alert('Formulario validado Pinchar en registrar')
     return true;
-}
+    
+    }
+    
+
 
 function validarNombre(){
     var nombre = document.getElementById('txtNombre').value;
@@ -92,6 +94,11 @@ function validarTelefono(){
 
 
 
+
+
+
+
+
 var searchbar = document.querySelector("#search");
 function slide(){
 
@@ -103,3 +110,48 @@ function slide(){
 }
 
 
+function EnviarMensaje() {
+
+    var resp = validarEmail();
+    if (resp == false) {
+        return false;
+    }  
+    var resp = validarNombreCompleto();
+    if (resp == false) {
+        return false;    }
+    
+    var resp = validarMensaje();
+    if (resp == false) {
+        return false;
+    }
+    else
+        alert('mensaje enviado')
+   
+   
+    return true;
+    
+    }
+function validarEmail() {
+        var Email = document.getElementById('txtEmail').value;
+        if (Email.trim().length == 0 ){
+            alert('ingrese Email');
+            return false;        
+        }   
+        console.log ('Email:'+ Email);
+    }
+function validarNombreCompleto(){
+        var nombrecompleto = document.getElementById('txtNombreCompleto').value;
+        if (nombrecompleto.trim().length == 0 ){
+            alert('ingrese  el nombre completo');
+            return false;    
+        }    
+        console.log ('nombrecompleto:'+ nombrecompleto);
+    }
+    function validarMensaje() {
+        var mensaje = document.getElementById('txtMensaje').value;
+        if (mensaje.trim().length == 0 ){
+            alert('ingrese un mensaje');
+            return false;        
+        }   
+        console.log ('mensaje:'+ mensaje);
+    }
