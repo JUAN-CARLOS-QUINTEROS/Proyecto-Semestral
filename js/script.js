@@ -23,11 +23,7 @@ function ValidarFormulario() {
     if (resp == false) {
         return false;
     }
-    var resp = validarTelefono();
-    if (resp == false) {
-        return false;
-    } 
-    
+        
     else
         alert('Formulario validado Pinchar en registrar')
     return true;
@@ -82,14 +78,7 @@ function validarPassword(){
     console.log ('password:'+ password);
 }
 
-function validarTelefono(){
-    var telefono = document.getElementById('txtFono').value;
-    if (telefono.trim().length == 0 ){
-        alert('ingrese telefono');
-        return false;    
-    }    
-    console.log ('telefono:'+ telefono);
-}
+
 
 
 
@@ -124,6 +113,11 @@ function EnviarMensaje() {
     if (resp == false) {
         return false;
     }
+    
+    var resp = validarTelefono();
+    if (resp == false) {
+        return false;
+    } 
     else
         alert('mensaje enviado')
    
@@ -147,11 +141,19 @@ function validarNombreCompleto(){
         }    
         console.log ('nombrecompleto:'+ nombrecompleto);
     }
-    function validarMensaje() {
+function validarMensaje() {
         var mensaje = document.getElementById('txtMensaje').value;
         if (mensaje.trim().length == 0 ){
             alert('ingrese un mensaje');
             return false;        
         }   
         console.log ('mensaje:'+ mensaje);
+    }
+function validarTelefono(){
+        var telefono = document.getElementById('txtFono').value;
+        if (telefono.trim().length == 0 ){
+            alert('ingrese telefono');
+            return false;    
+        }    
+        console.log ('telefono:'+ telefono);
     }
