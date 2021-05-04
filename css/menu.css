@@ -26,7 +26,7 @@ header label{
 #search{
     width: 100%;
     height: 64px;
-    background-color: #22362e;
+    background-color: rgb(51, 51,51 , 0.9);
     transition: .4s;
 }
 
@@ -34,7 +34,7 @@ header label{
     width: calc(100% - 180px);
     padding: 10px 15px;
     margin-right: 25px;
-    background-color: #22362e;
+    background-color: rgb(51, 51,51 , 0.9);
     border: none;
     font-size: 1.5rem;
     border-bottom: 3px solid #fafafa;
@@ -52,7 +52,7 @@ header label{
 #search button{
     padding: 10px 25px;
     border: 2px solid #fafafa;
-    background-color: #22362e;
+    background-color: rgb(51, 51,51 , 0.9);
     color: #fafafa;
     transition: .4s;
 }
