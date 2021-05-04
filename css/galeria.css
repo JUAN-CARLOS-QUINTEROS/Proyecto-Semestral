@@ -13,9 +13,6 @@
     
 }
 
- 
-    
-
 #blog {
     background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #bfe762 46%, #28b823 59%, #13805f 71%, #163d2d 84%,
     #1c1a27 100%);
@@ -42,8 +39,6 @@
     border-radius: 15px;
     position: inherit;
     object-fit:initial ;
-
-    
     
 }
 
