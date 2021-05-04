@@ -26,14 +26,12 @@ function ValidarFormulario() {
     var resp = validarTelefono();
     if (resp == false) {
         return false;
-    }
-    else 
-    alert('pinchar en registrar')
+    }    
     return true;
     
     }
     
-}
+
 
 function validarNombre(){
     var nombre = document.getElementById('txtNombre').value;
@@ -89,9 +87,6 @@ function validarTelefono(){
     }    
     console.log ('telefono:'+ telefono);
 }
-
-
-
 
 
 
