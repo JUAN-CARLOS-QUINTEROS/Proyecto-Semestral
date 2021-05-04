@@ -192,7 +192,10 @@ header label{
 footer .contenedor{
     text-align: center;
     padding: 40px; 
-    font-family: fantasy;    
+    font-family: fantasy;
+    margin:auto;
+    
+
       
 
 }
@@ -206,6 +209,8 @@ footer .contenedor{
     }
     
 }
+
+
 
       
 
