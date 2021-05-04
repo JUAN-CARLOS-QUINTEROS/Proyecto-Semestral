@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaDino</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <header>
+
+        <div class="contenedor">
+            <h1 class="icon-paw">EducaDino</h1>
+            <input type="checkbox" name="" id="MenuDino">
+            <label class="icon-align-left" for="MenuDino"></label>
+            <label class="icon-search" id="buscador" onclick="slide()"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="Formulario.html">Formulario</a>
+                <a href="Contacto.html">Contactanos</a>
+                
+            </nav>
+        </div>
+        <div id="search" class="hide">
+            <div class="contenedor2">
+                <input type="text" placeholder="Ej: Test"><button>Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+           <!--seccion de contenido-->
+      </section>
+      <section id ="login">
+         
+        </h1>
+        <form class= "login-inicio"action="" method="POST">
+          <h2 class="login-titulo"><img src="/img/ind/noctis-cho.gif" alt="" />Inicio de Sesion<img
+            src="/img/ind/noctis-cho.gif"
+            alt=""
+          /></h2>
+          <div class="contenedor-input">
+            <input class="col-100" type="text" name="txtNombre" id="txtNombre" placeholder="Usuario">
+            <input class="col-100" type="password" name="txtPass" id="txtPass" placeholder="Contraseña">
+            <input class="btn-ingresar" type="button" value="Ingresar" onclick="mensaje()">
+        </div>
+        </form>
+      </section>
+
+
+
+    </main>
+
+    <footer>
+        <section id="banner">
+            <div class="contenedor">
+                <p>EducaDino - Desarrollo web</p>
+            </div>
+        </section>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
