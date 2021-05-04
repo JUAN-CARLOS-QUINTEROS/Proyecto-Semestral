@@ -197,6 +197,18 @@ footer .contenedor{
 
 }
 
+@media  (max-width:660px){
+    #login{
+        width: 100%;        
+    }
+    .contenedor3-input{
+        width: fit-content;
+    }
+    
+}
+
+      
+
 
 
 
